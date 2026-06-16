@@ -1,0 +1,121 @@
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ek vibrant gradient background jo glass effect ko upar uthakar dikhayega */
+    background: linear-gradient(135deg, #2e0854 0%, #7c3aed 50%, #c084fc 100%); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* 🔥 Yeh hai asli Glassmorphism Card MACHINE */
+.account-card {
+    background: rgba(255, 255, 255, 0.1); /* Translucent white padding */
+    backdrop-filter: blur(12px); /* Glass blur effect */
+    -webkit-backdrop-filter: blur(12px); /* Safari support ke liye */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Light glass border */
+    border-radius: 16px;
+    width: 450px;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); /* Soft deep shadow */
+    color: #ffffff; /* Poora text white */
+}
+
+.card-title {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px dashed rgba(255, 255, 255, 0.3); /* Dashed white line */
+    margin-bottom: 24px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.avatar-wrapper {
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.6); /* White border around avatar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.camera-btn {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.camera-btn:hover {
+    transform: scale(1.1);
+}
+
+.user-details .user-name {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    font-weight: 600;
+}
+
+.user-details .user-email {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75); /* Soft white email */
+    margin: 0;
+}
+
+.bio-text {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* 🔥 Logout button ko bhi thoda aesthetic look diya hai */
+.logout-btn {
+    background: rgba(239, 68, 68, 0.2); /* Soft transparent red */
+    color: #fca5a5;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    width: 100%; /* Full width button for layout balance */
+}
+
+.logout-btn:hover {
+    background: rgba(239, 68, 68, 0.8);
+    color: white;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}
