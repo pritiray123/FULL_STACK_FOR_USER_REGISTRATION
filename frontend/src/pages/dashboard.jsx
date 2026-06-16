@@ -16,7 +16,7 @@ export default  function Dashboard(){
             }
 
             try{
-                const res= await fetch("http://127.0.0.1:8000/dashboard",{
+                const res= await fetch("https://full-stack-for-user-registration.onrender.com/dashboard",{
                      method:"GET",
                         headers:{
                             "Authorization":`Bearer ${token}`,
